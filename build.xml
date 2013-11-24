@@ -1,0 +1,34 @@
+<project name="integraloc" default="help" basedir=".">
+	<property file="./build.properties" />
+    <available file="/var/lib/jenkins/db.properties" type="file" property="db.properties.exist"/>
+    <if>
+        <isset property="db.properties.exist"/>
+        <then>
+            <property file="/var/lib/jenkins/db.properties"/>
+        </then>
+    </if>
+
+    <target name="help" description="List available targets">
+        <exec executable="phing"
+              passthru="true">
+            <arg value="-l" />
+        </exec>
+    </target>
+
+    <target name="clean">
+        <delete dir="${build.output}" />
+    </target>
+
+    <target name="composer">
+        <composer command="install" composer="${composer.bin}" />
+    </target>
+
+    <target name="prepare" depends="clean, composer" description="Prepare the project before building">
+        <mkdir dir="${build.output}" />
+        <mkdir dir="${phpdoc.output}" />
+        <chmod file="${project.basedir}/public/images/project" mode="0777" />
+        <chmod file="${project.basedir}/public/images/resource" mode="0777" />
+        <chmod file="${project.basedir}/data/uploaded_files" mode="0777" />
+        <chmod file="${project.basedir}/data/user_photos" mode="0777" />
+    </target>
+</project>
