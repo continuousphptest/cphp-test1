@@ -2,22 +2,7 @@
     "name":     "cphp-test",
     "homepage": "http://test.com/",
     "require":  {
-        "php":                                      ">=5.4",
-        "zendframework/zendframework":              "2.2.5",
-        "phly/phly-restfully":                      "2.2.0",
-        "aws/aws-sdk-php-zf2":                      "1.1.0",
-        "doctrine/doctrine-orm-module":             "0.7",
-        "zendframework/zend-developer-tools":       "0.0.2",
-        "nelmio/alice":                             "1.5.0",
-        "fzaninotto/faker":                         "1.2.0",
-        "doctrine/data-fixtures":                   "1.0.*@dev",
-        "hounddog/doctrine-data-fixture-module":    "dev-master",
-        "symfony/finder":                           "2.3.*",
-        "behat/behat":                              "2.5.0",
-        "guzzle/guzzle":                            "3.7.1",
-        "phpunit/phpunit":                          "3.7.28",
-        "zurb/foundation":                          "v4.3.1",
-        "cpliakas/git-wrapper": "1.0.2"
+        
     },
     "autoload": {
         "psr-0": {
