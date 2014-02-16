@@ -5,24 +5,6 @@
         "php":                                      ">=5.4",
         "zendframework/zendframework":              "2.2.5",
         "phly/phly-restfully":                      "2.2.0",
-        "aws/aws-sdk-php-zf2":                      "1.1.0",
-        "doctrine/doctrine-orm-module":             "0.7",
-        "zendframework/zend-developer-tools":       "0.0.2",
-        "nelmio/alice":                             "1.5.0",
-        "fzaninotto/faker":                         "1.2.0",
-        "guzzle/guzzle":                            "3.7.1",
-        "zurb/foundation":                          "v5.0.2",
-        "cpliakas/git-wrapper":                     "1.0.2",
-        "rhumsaa/uuid":                             "2.5",
-        "symfony/config":                           "2.1.9",
-        "symfony/finder":                           "2.1.9",
-        "symfony/symfony":                          "2.1.9",
         "zfr/zfr-cors":                             "v1.1.2"
-    },
-    "autoload": {
-        "psr-0": {
-            "Context": "features",
-            "Zf2Extension": "features"
-        }
     }
 }
